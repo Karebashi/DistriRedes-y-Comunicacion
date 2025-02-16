@@ -1,11 +1,38 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
+    <script src="https://kit.fontawesome.com/9540a64b47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/auth.css">
 </head>
 <body>
-    <h1>REGISTER</h1>
+    <header class="top-bar">
+        <a href="index.html" class="logo">Distriredes y Comunicación</a>
+    </header>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="avatar">
+                <i class="fas fa-user-plus"></i>
+            </div>
+            <h2>Crea tu cuenta</h2>
+            <form action="/register" method="post">
+                <div class="input-container">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nombre completo" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+            <p class="create-account">Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </div>
+    </div>
 </body>
 </html>
