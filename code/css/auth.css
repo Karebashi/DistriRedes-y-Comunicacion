@@ -1,18 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background: #e3dfdf;
     margin: 0;
+    padding: 0;
+    background-color: #f7ebeb;
 }
 
 .top-bar {
     width: 100%;
     background-color: #0056b3;
     padding: 15px;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@ body {
 
 .logo {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     font-weight: bold;
     margin-left: 20px;
@@ -109,4 +109,60 @@ button:hover {
 
 .forgot-password a:hover, .create-account a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .auth-card {
+        width: 90%;
+        margin-top: 60px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-container i {
+        margin-bottom: 5px;
+    }
+
+    .input-container input {
+        width: 100%;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .forgot-password, .create-account {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .auth-card {
+        padding: 20px;
+    }
+
+    .avatar {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 10px;
+    }
 }
